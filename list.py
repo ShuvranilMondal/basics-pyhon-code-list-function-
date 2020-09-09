@@ -1,7 +1,7 @@
 num = [1,2,3,4,5]
 print("number is {} ".format(num))
 
-words = ["apple", "mango" , "strawberry" , "goava"]
+words = ["apple", "mango" , "strawberry" , "guava"]
 print("{}".format(words[2]))
 print("{}".format(words[-1]))
 words[1] = "nil"                              #add variable in list//
@@ -12,7 +12,7 @@ name = input("Enter : ")
 menu.append(name)
 print(menu)
 
-words = ["apple", "mango" , "strawberry" , "goava"]
+words = ["apple", "mango" , "strawberry" , "guava"]
 # words.insert(2 , "nil")
 words[2] = "nill"
 print(words)
@@ -24,7 +24,7 @@ print(words)
 
 name= input("Enter your fruit : ")
 nam = name.lower().strip()
-words = ["apple", "mango" , "strawberry" , "goava" , "apple"]
+words = ["apple", "mango" , "strawberry" , "guava" , "apple"]
 if nam  in words:
     print("{} is present".format(nam))
 else:
