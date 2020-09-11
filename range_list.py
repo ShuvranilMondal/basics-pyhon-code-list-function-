@@ -95,7 +95,60 @@ while True:
 print("positive numbers :{}\nnegative numbers :{}".format(po,ne))
 print("number of positive numbers :{}\nnumber of negative numbers :{}".format(pos_count,neg_count))
 
+number = int(input("Enter number : TO stop enter = 0 : "))
+total_odd = 0
+total_even =0
+odd = []
+even =[]
+while True:
+    if number == 0:
+        break
+    else:
+        if number % 2 == 0:
+            even.append(number)
+            print("number is even")
+            number = int(input("Enter number : TO stop enter = 0 :"))
+            total_even += 1
+        else:
+            odd.append(number)
+            print("number is odd")
+            number = int(input("Enter number : TO stop enter = 0 :"))
+            total_odd += 1
 
+print(f"odd numbers :{odd} : number of odd :{total_odd}\neven numbers : {even} : number of even :{total_even}") 
+            
+
+number_1 = [1,3,4]
+number_2 = [2,3,1]
+
+def filter_num(n,l):
+    output = []
+    for i in n:
+        if i in l:
+            output.append(i)
+    return output
+
+print(filter_num(number_1,number_2))          # output = [1,3]
+
+
+number = [20,4,1]
+
+def cal_num(l):
+    return max(l) - min(l)
+
+print(cal_num(number))                    #  output = 19
+
+
+name = [1,3,1,[2,3,2],[3,3]]
+
+def find(l):
+    total = 0
+    for i in l:
+        if type(i) == list:
+            total += 1
+    return total
+
+print(find(name))                   # output = 2
 
   
 
